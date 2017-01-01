@@ -48,11 +48,11 @@ def login(url):
 
     login_data = {
         '_xsrf' : _xsrf,
-        'password' : 'zjh418$!*',
+        'password' : 'pwd',
         'captcha_type' : 'cn',
         'captcha' : get_captcha(),
         'remember_me' : 'true',
-        'email' : '382853730@qq.com'
+        'email' : '1233@qq.com'
     }
     repr = session.post('https://www.zhihu.com/login/email',data=login_data,headers=headers)
     print(repr)
